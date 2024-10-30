@@ -6,6 +6,19 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        fadeInDown: 'fadeInDown 2s ease-out forwards',
+      },
+      keyframes: {
+        fadeInDown: {
+          '0%': { opacity: 0, transform: 'translateY(-20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
+      
+      transitionDuration: {
+        '2000': '2000ms',
+      },
  
       fontFamily: {
         changa: ['Changa', 'sans-serif'],

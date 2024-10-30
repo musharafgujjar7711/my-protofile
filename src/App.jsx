@@ -1,18 +1,24 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import MyInfo from './components/MyInfo'
-import About from './components/About'
+import Hero from './components/Hero'
 import Experience from './Experience'
 import Mycontact from './components/Mycontact'
+import Services from './components/Services'
+import About from './components/About'
+import Footer from './components/Footer'
+import Project from './components/Project'
 
 function App() {
   return (
-    <div className='bg-gray-700 '>
+    <div className=' '>
       <Navbar/>
-      <MyInfo/>
+      <Hero/>
       <About/>
-      <Experience/>
-      <Mycontact/> 
+      <Project/>
+      <Services/>
+       {/* <Experience/> */}
+       {/* <Mycontact/> */}
+      <Footer/>
     </div>
   )
 }
