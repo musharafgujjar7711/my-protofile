@@ -17,18 +17,18 @@ function Hero() {
 
     useEffect(() => {
         const handleScroll = () => {
-          const birds = document.querySelectorAll('.bird, .bird2, .bird3');
-          birds.forEach((bird) => {
-            const rect = bird.getBoundingClientRect();
-            if (rect.top < window.innerHeight) {
-              bird.classList.add('animate-bird');
-            }
-          });
+            const birds = document.querySelectorAll('.bird, .bird2, .bird3');
+            birds.forEach((bird) => {
+                const rect = bird.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    bird.classList.add('animate-bird');
+                }
+            });
         };
-    
+
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-      }, []);
+    }, []);
 
 
     useEffect(() => {
@@ -49,16 +49,16 @@ function Hero() {
         <div id='hero' className='flex flex-col items-center justify-center bg-gradient-to-r from-white to-sky-300 overflow-hidden py-10'>
             <div className='container flex flex-col-reverse md:flex-row items-center justify-between md:gap-10 w-full max-w-screen-lg mx-auto px-4'>
                 {/* Text Section */}
-                <div className='flex flex-col items-start md:gap-8 md:mt-10 mt-14 lg:mt-0 w-full md:w-1/2 px-3'>
-                    <h1 className='text-3xl md:text-5xl font-bold capitalize'>Hi, I'm Musharaf Hussain</h1>
+                <div className='flex flex-col items-start md:gap-8 md:mt-4 mt-14 lg:mt-0 w-full md:w-1/2 px-3'>
+                    <h1 className='text-3xl lg:text-5xl sm:text-4xl font-bold capitalize'>Hi, I'm Musharaf Hussain</h1>
                     <p className='text-lg md:text-2xl font-medium text-gray-500'>
                         React & JavaScript Developer | Front-End Specialist | Experience in Responsive, Scalable Web Applications
                     </p>
                     <div className="flex gap-6 mt-4">
-                        <button className="text-xs md:text-lg py-2 md:py-3 px-4 md:px-10 bg-blue-700 text-white font-medium rounded-full">
+                        <button className="text-xs md:text-lg py-2 md:py-3 px-4 sm:px-5 lg:px-10 bg-blue-700 text-white font-medium rounded-full">
                             Let's Talk
                         </button>
-                        <button className="text-xs md:text-lg py-2 md:py-3 px-4 md:px-10 bg-white text-gray-600 border rounded-full hover:bg-sky-100 transition ease-in-out">
+                        <button className="text-xs md:text-lg py-2 md:py-3 px-4 sm:px-5 lg:px-10 bg-white text-gray-600 border rounded-full hover:bg-sky-100 transition ease-in-out">
                             Start Project
                         </button>
                     </div>
@@ -80,13 +80,13 @@ function Hero() {
 
                 {/* Image Section */}
                 <div className=' md:hidden relative w-full md:w-1/2 flex items-center justify-center mt-10 md:mt-0 '>
-                <img
+                    <img
                         src={profile}
                         alt="Portfolio showcase"
                         className="w-[300px] h-[300px] ml-9 md:ml-0  rounded-xl transform scale-125 opacity-80 hover:opacity-100 transition duration-300"
                     />
                 </div>
-                
+
                 <div className='relative w-full md:w-1/2  flex items-center justify-center mt-2 '>
                     <img
                         src={myProfile}
@@ -95,28 +95,28 @@ function Hero() {
                     />
 
 
-                   
-                        <div className='bird absolute top-20 md:top-44 sm:top-40 right-52 sm:right-28 md:right-12 space-y-14'>
-                            <div className='relative bg-white rounded-full text-xs md:text-lg font-medium py-2 px-5'>
-                                Illustration
-                                <PiTwitterLogoDuotone className='absolute text-2xl md:text-5xl text-teal-50 bg-teal-400 py-2 px-2 rounded-full -top-4 -left-3 md:-top-7' />
-                            </div>
-                        </div>
 
-                        <div className='bird2 absolute top-36 md:top-60 mt-12 right-60 sm:right-32 sm:top-60 md:right-0 space-y-14'>
-                            <div className='relative bg-white   rounded-full text-xs md:text-lg font-medium py-2 px-5'>
-                                Web Developer
-                                <MdDesignServices className='absolute text-2xl md:text-5xl text-teal-50 bg-teal-400 py-2 px-2 rounded-full -top-4 -left-3 md:-top-7' />
-                            </div>
+                    <div className='bird absolute top-20 md:top-44 sm:top-40 right-52 sm:right-28 md:right-12 space-y-14'>
+                        <div className='relative bg-white rounded-full text-xs md:text-lg font-medium py-2 px-5'>
+                            Illustration
+                            <PiTwitterLogoDuotone className='absolute text-2xl md:text-5xl text-teal-50 bg-teal-400 md:py-2 md:px-2 rounded-full -top-4 -left-3 md:-top-7' />
                         </div>
+                    </div>
 
-                        <div className='bird3 absolute bg-white rounded-full top-52 md:top-72 mt-24 sm:right-56 sm:top-64 right-60 md:right-28 space-y-14'>
-                            <div className='relativebg-white   rounded-full md:text-lg text-xs font-medium md:font-medium py-2 px-5 md:-top-7'>
-                                Responsive
-                                <DiResponsive className='absolute text-2xl md:text-5xl text-black-50 bg-teal-400 py-2 px-2 rounded-full -top-4 md:-top-7 -left-3' />
-                            </div>
+                    <div className='bird2 absolute top-36 md:top-60 mt-12 right-60 sm:right-32 sm:top-60 md:right-0 space-y-14'>
+                        <div className='relative bg-white   rounded-full text-xs md:text-lg font-medium py-2 px-5'>
+                            Web Developer
+                            <MdDesignServices className='absolute text-2xl md:text-5xl text-teal-50 bg-teal-400 md:py-2 md:px-2 rounded-full -top-4 -left-3 md:-top-7' />
                         </div>
-                   
+                    </div>
+
+                    <div className='bird3 absolute bg-white rounded-full top-52 md:top-72 mt-24 sm:right-56 sm:top-64 right-60 md:right-28 space-y-14'>
+                        <div className='relativebg-white   rounded-full md:text-lg text-xs font-medium md:font-medium py-2 px-5 md:-top-7'>
+                            Responsive
+                            <DiResponsive className='absolute text-2xl md:text-5xl text-black-50 bg-teal-400 md:py-2 md:px-2 rounded-full -top-4 md:-top-7 -left-3' />
+                        </div>
+                    </div>
+
 
 
                 </div>

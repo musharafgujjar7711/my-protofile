@@ -27,7 +27,7 @@ function Navbar() {
     <div className='relative'>
       <div className='container mx-auto md:mt-10'>
         <div className='p-6 flex items-center justify-around'>
-          <h1 className='font-bold text-lg md:text-xl lg:text-2xl xl:text-3xl flex-1'>MyPortfolio</h1>
+          <h1 className='font-bold text-xl md:text-2xl lg:text-3xl xl:text-3xl flex-1'>MyPortfolio</h1>
           <div onClick={toggleMenu} className='md:hidden cursor-pointer'>
             {isOpen ? <CgClose size={30} /> : <RxHamburgerMenu size={30} />}
           </div>
