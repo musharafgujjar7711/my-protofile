@@ -4,6 +4,7 @@ import image3 from '../assets/images/landing-page.jpeg'
 import image5 from '../assets/images/Quiz-App.png'
 import image6 from '../assets/images/youTube.jpeg'
 import image2 from '../assets/images/Nerko-an.png'
+import image7 from '../assets/images/news.jpg'
 
 export const projects = [
     {
@@ -27,8 +28,8 @@ export const projects = [
         { name: "JavaScript", color: "text-yellow-500" }
       ],
       image:image3,
-      githubLink: "https://github.com/username/landing-page",
-      liveLink: "https://landing-page.vercel.app"
+      githubLink: "https://github.com/musharafgujjar7711/Landing-page-2",
+      liveLink: "https://landing-page-2-dlbs.vercel.app/"
     },
     {
       name: "Neko Animation App",
@@ -39,8 +40,8 @@ export const projects = [
         { name: "JavaScript", color: "text-yellow-500" }
       ],
       image: image2,
-      githubLink: "https://github.com/username/neko-animation-app",
-      liveLink: "https://neko-animation.vercel.app"
+      githubLink: "https://github.com/musharafgujjar7711/Nerko-Potfolio",
+      liveLink: "https://nerko-potfolio.vercel.app/"
     },
     {
       name: "E-commerce App",
@@ -51,8 +52,8 @@ export const projects = [
         { name: "Tailwind CSS", color: "text-teal-600" }
       ],
       image: image4,
-      githubLink: "https://github.com/username/ecommerce-app",
-      liveLink: "https://ecommerce-app.vercel.app"
+      githubLink: "https://github.com/musharafgujjar7711/e.Shop",
+      liveLink: "https://e-shop-six-rosy.vercel.app/"
     },
     {
       name: "Quiz App",
@@ -63,8 +64,8 @@ export const projects = [
         { name: "CSS", color: "text-purple-600" }
       ],
       image: image5,
-      githubLink: "https://github.com/username/quiz-app",
-      liveLink: "https://quiz-app.vercel.app"
+      githubLink: "https://github.com/musharafgujjar7711/Quiz-app",
+      liveLink: "https://quiz-app-dun-eight.vercel.app/"
     },
     {
       name: "YouTube Clone",
@@ -75,7 +76,19 @@ export const projects = [
         { name: "CSS", color: "text-purple-500" }
       ],
       image: image6,
-      githubLink: "https://github.com/username/youtube-clone",
+      githubLink: "https://github.com/musharafgujjar7711/youtube-clone",
+      liveLink: "https://youtube-clone-dun-nine.vercel.app/"
+    },
+    {
+      name: "News app",
+      description: " built a fully responsive News app that uses an API to display the latest news across various categories.",
+      tags: [
+        { name: "React", color: "text-blue-600" },
+        { name: "API Integration", color: "text-red-600" },
+        { name: "CSS", color: "text-purple-500" }
+      ],
+      image: image7,
+      githubLink: "https://github.com/musharafgujjar7711/My-topnews",
       liveLink: "https://youtube-clone.vercel.app"
     }
   ];
