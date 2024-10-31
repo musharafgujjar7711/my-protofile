@@ -7,6 +7,7 @@ import Services from './components/Services'
 import About from './components/About'
 import Footer from './components/Footer'
 import Project from './components/Project'
+import Connect from './components/Connect'
 
 function App() {
   return (
@@ -16,8 +17,7 @@ function App() {
       <About/>
       <Project/>
       <Services/>
-       {/* <Experience/> */}
-       {/* <Mycontact/> */}
+      <Connect/>
       <Footer/>
 
     </div>

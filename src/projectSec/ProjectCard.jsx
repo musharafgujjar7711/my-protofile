@@ -10,7 +10,7 @@ import { TbBrandVercel } from 'react-icons/tb';
 function ProjectCard({ project, index }) {
   return (
     <motion.div
-      className=''
+      className='mb-9'
       key={index}
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -20,7 +20,7 @@ function ProjectCard({ project, index }) {
         max: 45,
         scale: 1,
         speed: 540
-      }} className='bg-gray-700 p-5 rounded-2xl w-full sm:w-[360px ]  ' >
+      }} className='bg-cyan-950 p-5 rounded-2xl w-full sm:w-[360px ]  ' >
         <div className=' w-full h-[230px] relative'>
           <img
             src={project.image}
@@ -35,8 +35,8 @@ function ProjectCard({ project, index }) {
           </div>
 
           <div className=' mt-5 '>
-           <h2 className=' text-2xl font-bold text-white '>{project.name}</h2>
-           <p className=' mt-2 text-gray-400 text-lg'>{project.description}</p>
+           <h2 className=' text-2xl font-bold text-white '>{project.name.slice(0,14)}</h2>
+           <p className='  text-gray-400 text-lg mt-4'>{project.description}</p>
           
         </div>
         <div className=' flex flex-wrap mt-4 gap-2'>

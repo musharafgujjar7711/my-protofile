@@ -25,7 +25,7 @@ function Navbar() {
 
   return (
     <div className='relative'>
-      <div className='container mx-auto md:mt-10'>
+      <div className='container mx-auto md:mt-8 bg-zinc-800 text-white shadow-2xl border-t border-red-900 border-4 '>
         <div className='p-6 flex items-center justify-around'>
           <h1 className='font-bold text-xl md:text-2xl lg:text-3xl xl:text-3xl flex-1'>MyPortfolio</h1>
           <div onClick={toggleMenu} className='md:hidden cursor-pointer'>
@@ -33,7 +33,7 @@ function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <ul className='hidden md:flex capitalize font-bold cursor-pointer md:gap-14 md:text-xl'>
+          <ul className='hidden md:flex capitalize font-bold z-50 cursor-pointer md:gap-14 md:text-xl'>
             <li onClick={handleMenuItemClick} className="hover:text-red-400 brightness-110 hover:underline p-2 rounded duration-200">
               <Link to="about" smooth={true} duration={500}>About</Link>
             </li>

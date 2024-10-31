@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 function  Services() {
   return (
-    <div className='relative' id='services'>
+    <div className='relative bg-zinc-800 border-dashed border-blue-600 border-t-4 text-white ' id='services'>
       <div className='container '>
         <div className='flex flex-col'>
           {/* Animated Heading */}
@@ -52,7 +52,7 @@ function  Services() {
             ].map((service, index) => (
               <motion.div
                 key={index}
-                className='box shadow-2xl shadow-black  py-2 px-3 rounded-lg'
+                className='box shadow-2xl shadow-black  py-2 px-3 rounded-lg mb-6'
                 initial={{ opacity: 0, y: 50 }} // Start below the original position
                 animate={{ opacity: 1, y: 0 }} // Fade in and move to the original position
                 transition={{ duration: 0.5, delay: index * 1 }} // Delay based on index
