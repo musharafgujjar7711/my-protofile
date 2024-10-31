@@ -4,6 +4,9 @@ import { FcAbout } from 'react-icons/fc';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { SiHyperskill } from 'react-icons/si';
 import { Link } from 'react-scroll';
+import { GrProjects } from "react-icons/gr";
+import { IoMdContact } from "react-icons/io";
+import { VscProject } from 'react-icons/vsc';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,21 +49,25 @@ function Navbar() {
           </ul>
 
           {/* Mobile Menu */}
-          <ul className={`md:hidden absolute left-32 right-0 z-50 top-14 rounded-lg gap-2 bg-white text-black ${isOpen ? 'flex' : 'hidden'} flex-col p-4`}>
-            <li onClick={handleMenuItemClick} className='hover:bg-gray-400 p-2 rounded flex items-center justify-around duration-200'>
-              <Link to="about" smooth={true} duration={500} onClick={handleMenuItemClick}>About <FcAbout /></Link>
+          <ul className={`md:hidden absolute left-32 font-bold  right-0 z-50 top-14 rounded-lg gap-2 bg-white text-black ${isOpen ? 'flex' : 'hidden'} flex-col p-4`}>
+            <li onClick={handleMenuItemClick} className='hover:text-red-600  p-2 rounded flex items-center justify-around duration-200'>
+              <Link to="about" smooth={true} duration={500} onClick={handleMenuItemClick}>About </Link>
+              <p><FcAbout /></p>
             </li>
             <hr />
-            <li onClick={handleMenuItemClick} className='hover:bg-gray-400 p-2 rounded duration-200 flex items-center justify-around'>
-              <Link to="services" smooth={true} duration={500} onClick={handleMenuItemClick}>Services <SiHyperskill /></Link>
+            <li onClick={handleMenuItemClick} className='hover:text-red-600  p-2 rounded duration-200 flex items-center justify-around'>
+              <Link to="services" smooth={true} duration={500} onClick={handleMenuItemClick}>Services </Link>
+              <p><SiHyperskill className=' text-fuchsia-400' /></p>
             </li>
             <hr />
-            <li onClick={handleMenuItemClick} className='hover:bg-gray-400 p-2 rounded duration-200 flex items-center justify-around'>
+            <li onClick={handleMenuItemClick} className='hover:text-red-600  p-2 rounded duration-200 flex items-center justify-around'>
               <Link to="project" smooth={true} duration={500} onClick={handleMenuItemClick}>Projects</Link>
+              <p><VscProject  className=' text-rose-400'/></p>
             </li>
             <hr />
-            <li onClick={handleMenuItemClick} className='hover:bg-gray-400 p-2 rounded duration-200 flex items-center justify-around'>
+            <li onClick={handleMenuItemClick} className='hover:text-red-600  p-2 rounded duration-200 flex items-center justify-around'>
               <Link to="contact" smooth={true} duration={500} onClick={handleMenuItemClick}>Contact</Link>
+              <p><IoMdContact size={20} className=' text-indigo-500'/></p>
             </li>
             <hr />
           </ul>
