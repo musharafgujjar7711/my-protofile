@@ -36,3 +36,15 @@
   animation: fadeInUp 1s forwards;
   animation-delay: 2s;
 }
+/* YourStyles.module.css */
+.sectionSubText {
+  font-size: 16px;
+  color: #666;
+}
+
+.sectionHeadText {
+  font-size: 54px;
+  font-weight: bold;
+  color: #333;
+}
+
