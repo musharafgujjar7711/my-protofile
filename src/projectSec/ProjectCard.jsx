@@ -20,7 +20,7 @@ function ProjectCard({ project, index }) {
         max: 45,
         scale: 1,
         speed: 540
-      }} className='bg-gray-800 p-5 rounded-2xl w-full sm:w-[360px ]  ' >
+      }} className='bg-gray-200 p-5 rounded-2xl w-full sm:w-[360px ]  ' >
         <div className=' w-full h-[230px] relative'>
           <img
             src={project.image}

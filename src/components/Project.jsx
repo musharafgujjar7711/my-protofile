@@ -16,14 +16,13 @@ const fadeInVariant = {
 
 function Project() {
   return (
-    <section className=' container pt-6'>
+    <section className=' container pt-6' id='project'>
       <motion.div
         variants={textVariant()}      
         initial="hidden"              
         animate="visible"           
         transition={{ duration: 0.5 }} 
       >
-        <p className='sectionSubText'>My Project</p> 
         <p className='sectionHeadText'>Project</p>   
       </motion.div>
       <div>
