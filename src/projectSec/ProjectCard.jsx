@@ -20,17 +20,17 @@ function ProjectCard({ project, index }) {
         max: 45,
         scale: 1,
         speed: 540
-      }} className='bg-gray-200 p-5 rounded-2xl w-full sm:w-[360px ]  ' >
+      }} className='bg-gray-700 p-5 rounded-2xl w-full sm:w-[360px ]  ' >
         <div className=' w-full h-[230px] relative'>
           <img
             src={project.image}
             alt={`${project.name} `}
             className='w-full h-full object-cover rounded-2xl' />
           <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className=' '>
-            <FaGithub className=' w-12 h-12 py-1 px-1 flex items-center justify-center left-12 absolute inset-0 bg-gray-900 text-white rounded-full hover:text-red-300' />
+            <FaGithub className=' w-12 h-12 py-1 px-1 flex items-center justify-center right-2 absolute  bg-gray-900 text-white rounded-full hover:text-red-300 mt-2' />
           </a>
           <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className=' '>
-            <TbBrandVercel className=' w-12 h-12 py-3 px-3 text-xs   absolute inset-0 bg-gray-900 text-white rounded-full hover:text-red-300' />
+            <TbBrandVercel className=' w-12 h-12 py-3 px-3 text-xs right-16   absolute  bg-gray-900 text-white rounded-full hover:text-red-300 mt-2' />
           </a>
           </div>
 

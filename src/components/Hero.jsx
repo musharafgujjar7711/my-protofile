@@ -4,6 +4,8 @@ import profile from '../assets/images/profile.png'
 import { BsTwitter } from 'react-icons/bs';
 import { useInView } from 'react-intersection-observer';
 import { PiTwitterLogoDuotone } from 'react-icons/pi';
+import { MdDesignServices } from 'react-icons/md';
+import { DiResponsive } from 'react-icons/di';
 
 function Hero() {
     const [count, setCount] = useState(0);
@@ -81,11 +83,11 @@ function Hero() {
                 <img
                         src={profile}
                         alt="Portfolio showcase"
-                        className="max-w-xs md:max-w-md ml-9 md:ml-0  rounded-xl transform scale-125 opacity-80 hover:opacity-100 transition duration-300"
+                        className="w-[300px] h-[300px] ml-9 md:ml-0  rounded-xl transform scale-125 opacity-80 hover:opacity-100 transition duration-300"
                     />
                 </div>
                 
-                <div className='relative w-full  flex items-center justify-center mt-2 '>
+                <div className='relative w-full md:w-1/2  flex items-center justify-center mt-2 '>
                     <img
                         src={myProfile}
                         alt="Portfolio showcase"
@@ -95,23 +97,23 @@ function Hero() {
 
                    
                         <div className='bird absolute top-20 md:top-44 sm:top-40 right-52 sm:right-28 md:right-12 space-y-14'>
-                            <div className='relative md:bg-white bg-purple-800 text-white rounded-full text-xs md:text-lg font-medium py-2 px-5'>
+                            <div className='relative bg-white rounded-full text-xs md:text-lg font-medium py-2 px-5'>
                                 Illustration
                                 <PiTwitterLogoDuotone className='absolute text-2xl md:text-5xl text-teal-50 bg-teal-400 py-2 px-2 rounded-full -top-4 -left-3 md:-top-7' />
                             </div>
                         </div>
 
                         <div className='bird2 absolute top-36 md:top-60 mt-12 right-60 sm:right-32 sm:top-60 md:right-0 space-y-14'>
-                            <div className='relative md:bg-white bg-purple-800 text-white rounded-full text-xs md:text-lg font-medium py-2 px-5'>
+                            <div className='relative bg-white   rounded-full text-xs md:text-lg font-medium py-2 px-5'>
                                 Web Developer
-                                <PiTwitterLogoDuotone className='absolute text-2xl md:text-5xl text-teal-50 bg-teal-400 py-2 px-2 rounded-full -top-4 -left-3 md:-top-7' />
+                                <MdDesignServices className='absolute text-2xl md:text-5xl text-teal-50 bg-teal-400 py-2 px-2 rounded-full -top-4 -left-3 md:-top-7' />
                             </div>
                         </div>
 
-                        <div className='bird3 absolute top-52 md:top-72 mt-24 sm:right-56 sm:top-64 right-60 md:right-28 space-y-14'>
-                            <div className='relative md:bg-white bg-purple-800 text-white rounded-full md:text-lg text-xs font-medium md:font-medium py-2 px-5 md:-top-7'>
+                        <div className='bird3 absolute bg-white rounded-full top-52 md:top-72 mt-24 sm:right-56 sm:top-64 right-60 md:right-28 space-y-14'>
+                            <div className='relativebg-white   rounded-full md:text-lg text-xs font-medium md:font-medium py-2 px-5 md:-top-7'>
                                 Responsive
-                                <PiTwitterLogoDuotone className='absolute text-2xl md:text-5xl text-teal-50 bg-teal-400 py-2 px-2 rounded-full -top-4 md:-top-7 -left-3' />
+                                <DiResponsive className='absolute text-2xl md:text-5xl text-black-50 bg-teal-400 py-2 px-2 rounded-full -top-4 md:-top-7 -left-3' />
                             </div>
                         </div>
                    
