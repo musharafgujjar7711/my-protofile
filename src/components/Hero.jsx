@@ -46,7 +46,8 @@ function Hero() {
     }, [count, inView]);
 
     return (
-        <div id='hero' className='flex flex-col items-center justify-center bg-zinc-800 text-white py-5'>
+        <div id='hero' className='flex flex-col items-center justify-center  text-white py-5'
+        style={{backgroundImage: `url(https://www.onyedika.xyz/static/media/index.89d3119228d600788910.svg)`}}>
             <div className='container flex flex-col-reverse md:flex-row items-center justify-between md:gap-10 w-full max-w-screen-lg mx-auto px-4'>
                 {/* Text Section */}
                 <div className='flex flex-col items-start md:gap-8 md:mt-4 mt-14 lg:mt-0 w-full md:w-1/2 px-3'>
@@ -81,7 +82,7 @@ function Hero() {
                 {/* Image Section */}
                 <div className=' md:hidden relative w-full md:w-1/2 flex items-center justify-center mt-10 md:mt-0 '>
                     <img
-                        src={profile}
+                        src=''
                         alt="Portfolio showcase"
                         className="w-[300px] h-[300px] ml-9 md:ml-0  rounded-xl transform scale-125 opacity-80 hover:opacity-100 transition duration-300"
                     />
