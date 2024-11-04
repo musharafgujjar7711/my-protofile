@@ -25,25 +25,25 @@ function Navbar() {
 
   return (
     <div className='relative'>
-      <div className='container mx-auto md:mt-8 bg-zinc-800 text-white shadow-2xl border-t border-red-900 border-4 '>
+      <div className='container mx-auto md:mt-8 bg-head text-black shadow-2xl border-t border-red-900 border-4 '>
         <div className='p-6 flex items-center justify-around'>
-          <h1 className='font-bold text-xl md:text-2xl lg:text-3xl xl:text-3xl flex-1'>MyPortfolio</h1>
+          <h1 className=' text-xl md:text-2xl lg:text-4xl md:font-bold font-bold lg:font-extrabold  flex-1'>Musharaf TechCraft</h1>
           <div onClick={toggleMenu} className='md:hidden cursor-pointer'>
             {isOpen ? <CgClose size={30} /> : <RxHamburgerMenu size={30} />}
           </div>
 
           {/* Desktop Menu */}
-          <ul className='hidden md:flex capitalize font-bold z-50 cursor-pointer md:gap-4 lg:gap-14 lg:text-xl md:text-lg'>
-            <li onClick={handleMenuItemClick} className="hover:text-red-400 brightness-110 hover:underline p-2 rounded duration-200">
+          <ul className='hidden md:flex capitalize font-bold z-50 custom-cursor2 md:gap-4 lg:gap-14 lg:text-3xl md:text-lg '>
+            <li onClick={handleMenuItemClick} className="hover:text-red-400 brightness-110 nav-item p-2 rounded duration-200">
               <Link to="about" smooth={true} duration={500}>About</Link>
             </li>
-            <li onClick={handleMenuItemClick} className="hover:text-red-400 brightness-110 hover:underline p-2 rounded duration-200">
+            <li onClick={handleMenuItemClick} className="hover:text-red-400 brightness-110  nav-item p-2 rounded duration-200">
               <Link to="services" smooth={true} duration={500}>Services</Link>
             </li>
-            <li onClick={handleMenuItemClick} className="hover:text-red-400 brightness-110 hover:underline p-2 rounded duration-200">
+            <li onClick={handleMenuItemClick} className="hover:text-red-400 brightness-110  nav-item p-2 rounded duration-200">
               <Link to="project" smooth={true} duration={500}>Project</Link>
             </li>
-            <li onClick={handleMenuItemClick} className="hover:text-red-400 brightness-110 hover:underline p-2 rounded duration-200">
+            <li onClick={handleMenuItemClick} className="hover:text-red-400 brightness-110  nav-item p-2 rounded duration-200">
               <Link to="contact" smooth={true} duration={500}>Contact</Link>
             </li>
            
@@ -61,14 +61,14 @@ function Navbar() {
           </ul>
 
           {/* Mobile Menu */}
-          <ul className={`md:hidden  absolute left-32 font-bold  right-0 z-50 top-14 rounded-lg gap-2 bg-white text-black ${isOpen ? 'flex' : 'hidden '} flex-col p-4`}>
+          <ul className={`md:hidden  absolute left-32 font-bold text-  right-0 z-50 top-14 rounded-lg gap-2 bg-white text-black ${isOpen ? 'flex' : 'hidden '} flex-col p-4`}>
             <li onClick={handleMenuItemClick} className='hover:text-red-600  p-2 rounded flex items-center justify-around duration-200'>
               <Link to="about" smooth={true} duration={500} onClick={handleMenuItemClick}>About </Link>
               <p><FcAbout /></p>
             </li>
             <hr />
             <li onClick={handleMenuItemClick} className='hover:text-red-600  p-2 rounded duration-200 flex items-center justify-around'>
-              <Link to="services" smooth={true} duration={500} onClick={handleMenuItemClick}>Services </Link>
+              <Link to="services" smooth={true} duration={500} onClick={handleMenuItemClick} className=''>Services </Link>
               <p><SiHyperskill className=' text-fuchsia-400' /></p>
             </li>
             <hr />
