@@ -27,10 +27,10 @@ function ProjectCard({ project, index }) {
             alt={`${project.name} `}
             className='w-full h-full object-cover rounded-2xl' />
           <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className=' '>
-            <FaGithub className=' w-12 h-12 py-1 px-1 flex items-center justify-center right-2 absolute  bg-gray-900 text-white rounded-full hover:text-red-300 mt-2' />
+            <FaGithub className=' w-12 h-12 py-1 px-1 custom-cursor2 flex items-center justify-center right-2 absolute  bg-gray-900 text-white rounded-full hover:text-red-300 mt-2' />
           </a>
           <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className=' '>
-            <TbBrandVercel className=' w-12 h-12 py-3 px-3 text-xs right-16   absolute  bg-gray-900 text-white rounded-full hover:text-red-300 mt-2' />
+            <TbBrandVercel className=' w-12 h-12 py-3 px-3 custom-cursor2 text-xs right-16   absolute  bg-gray-900 text-white rounded-full hover:text-red-300 mt-2' />
           </a>
           </div>
 

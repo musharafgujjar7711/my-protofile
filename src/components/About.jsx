@@ -119,7 +119,7 @@ const About = () => {
  
   
   return (
-    <section id="about" className="min-h-screen container bg-about   text-white  p-6">
+    <section id="about" className="min-h-screen custom-cursor container bg-about   text-white  p-6">
       <h2 className="text-4xl font-bold text-head  mb-4 text-center">About Me</h2>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-x-12 gap-y-7">
         <div className="left">
@@ -201,7 +201,7 @@ const About = () => {
           </div>
         </div>
       </div>
-
+   
     </section>
   );
 };

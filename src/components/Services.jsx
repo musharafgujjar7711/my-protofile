@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 function  Services() {
   return (
-    <div className='relative bg-zinc-800 border-dashed border-blue-600 border-t-4 text-white ' id='services'>
+    <div className='relative bg-about text-white ' id='services'>
       <div className='container '>
         <div className='flex flex-col'>
           {/* Animated Heading */}

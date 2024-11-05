@@ -16,7 +16,7 @@ const fadeInVariant = {
 
 function Project() {
   return (
-    <section className=' container  pt-6 bg-zinc-800 border-dashed border-blue-600 border-t-4 text-white' id='project'>
+    <section className=' container  pt-6 bg-about  text-white' id='project'>
       <motion.div
         variants={textVariant()}      
         initial="hidden"              

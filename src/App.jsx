@@ -11,12 +11,12 @@ import Connect from './components/Connect'
 
 function App() {
   return (
-    <div className=' '>
+    <div className='custom-cursor '>
       <Navbar/>
       <Hero/>
       <About/>
       <Project/>
-      <Services/>
+      {/* <Services/> */}
       <Connect/>
       <Footer/>
 

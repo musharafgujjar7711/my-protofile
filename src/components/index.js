@@ -4,9 +4,22 @@ import image3 from '../assets/images/landing-page.jpeg'
 import image5 from '../assets/images/Quiz-App.png'
 import image6 from '../assets/images/youTube.jpeg'
 import image2 from '../assets/images/Nerko-an.png'
-import image7 from '../assets/images/news.jpg'
+import image8 from '../assets/images/industree.png'
 
 export const projects = [
+
+  {
+    name: "Industries",
+    description: " built a fully responsive News app that uses an API to display the latest news across various categories.",
+    tags: [
+      { name: "React", color: "text-blue-600" },
+      { name: "API Integration", color: "text-red-600" },
+      { name: "CSS", color: "text-purple-500" }
+    ],
+    image: image8,
+    githubLink: "https://github.com/musharafgujjar7711/My-topnews",
+    liveLink: "https://burkettandco.ca/industries/"
+  },
     {
       name: "Weather App",
       description: "A web app that provides real-time weather updates for any location using WeatherAPI.",
@@ -79,17 +92,6 @@ export const projects = [
       githubLink: "https://github.com/musharafgujjar7711/youtube-clone",
       liveLink: "https://youtube-clone-dun-nine.vercel.app/"
     },
-    {
-      name: "News app",
-      description: " built a fully responsive News app that uses an API to display the latest news across various categories.",
-      tags: [
-        { name: "React", color: "text-blue-600" },
-        { name: "API Integration", color: "text-red-600" },
-        { name: "CSS", color: "text-purple-500" }
-      ],
-      image: image7,
-      githubLink: "https://github.com/musharafgujjar7711/My-topnews",
-      liveLink: "https://youtube-clone.vercel.app"
-    }
+   
   ];
   

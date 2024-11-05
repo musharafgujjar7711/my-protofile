@@ -23,7 +23,7 @@ const Connect = () => {
   };
 
   return (
-    <section id='contact' className="bg-zinc-800 border-dashed border-blue-600 border-t-4 text-white py-10 px-4 md:px-8 lg:px-16">
+    <section id='contact' className="bg-about text-white py-10 px-4 md:px-8 lg:px-16">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-semibold mb-6 text-center">Connect with Me</h2>
         <p className="text-center mb-10 text-gray-400">
