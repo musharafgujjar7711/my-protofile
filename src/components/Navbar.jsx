@@ -30,7 +30,7 @@ function Navbar() {
       <div className='container mx-auto md:mt-8 bg-head text-black shadow-2xl border-t border-red-900 border-4 '>
         <div className='p-6 flex items-center justify-around'>
           <h1 className='text-xl md:text-2xl lg:text-4xl md:font-bold font-bold lg:font-extrabold flex-1'>
-            Musharaf TechCraft
+            Musharaf Dev
           </h1>
           <div onClick={toggleMenu} className='md:hidden cursor-pointer'>
             {isOpen ? <CgClose size={30} /> : <RxHamburgerMenu size={30} />}
