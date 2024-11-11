@@ -64,7 +64,7 @@ function Navbar() {
                                     className={`block relative font-code  uppercase text-2xl text-n-1 hover:text-color-1 ${item.onlyMobile ? 'lg:hidden' : ''}
                                     px-6 py-6 md:py-8 lg:text-xs lg:font-semibold ${item.url === location.hash ? 'z-2 lg:text-n-1' : 'text-n-1/50'} lg:leading-5 xl:px-12 hover:text-n-1`}
                                 >
-                                    <p className='custom-cursor2'>{item.title}</p>
+                                    <p className='custom-cursor2  text-xl font-bold'>{item.title}</p>
                                 </a>
                             ) : (
                                 // Use Link for regular routing
