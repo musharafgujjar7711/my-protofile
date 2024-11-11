@@ -26,16 +26,18 @@ function ProjectCard({ project, index }) {
             src={project.image}
             alt={`${project.name} `}
             className='w-full h-full object-cover rounded-2xl' />
-          <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className=' '>
-            <FaGithub className=' w-12 h-12 py-1 px-1 custom-cursor2 flex items-center justify-center right-2 absolute  bg-gray-900 text-white rounded-full hover:text-red-300 mt-2' />
+        
+         <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className=' '>
+            <FaGithub className=' md:w-12 md:h-10 h-10 w-10 py-1 px-1 custom-cursor2 flex items-center justify-center right-1 absolute  bg-gray-900 text-white rounded-full hover:text-red-300 mt-3' />
           </a>
           <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className=' '>
-            <TbBrandVercel className=' w-12 h-12 py-3 px-3 custom-cursor2 text-xs right-16   absolute  bg-gray-900 text-white rounded-full hover:text-red-300 mt-2' />
+            <TbBrandVercel className='md:w-12 md:h-10 h-10 w-10 py-2 px-2 custom-cursor2 text-xs right-12    absolute  bg-gray-900 text-white rounded-full hover:text-red-300 mt-3' />
           </a>
+         
           </div>
 
           <div className=' mt-5 '>
-           <h2 className=' text-2xl font-bold text-white '>{project.name.slice(0,14)}</h2>
+           <h2 className=' md:text-2xl text-xl w-32  font-bold text-white '>{project.name.slice(0,14)}</h2>
            <p className='  text-gray-400 text-lg mt-4'>{project.description}</p>
           
         </div>

@@ -27,7 +27,7 @@ function Project() {
       </motion.div>
       <div>
       <motion.p
-        className="yourClassName mt-4 md:text-xl text-lg font-medium text-gray-400  cursor-pointer"    
+        className="yourClassName mt-4 md:text-xl text-lg font-medium text-center text-gray-400  cursor-pointer"    
         variants={fadeInVariant}      
         initial="hidden"             
         animate="visible"             

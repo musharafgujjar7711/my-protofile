@@ -41,8 +41,8 @@ function Navbar() {
         <div className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:backdrop-blur-sm
             lg:bg-slate-700 ${openNavigation ? 'bg-slate-800' : 'bg-n-8/80 backdrop-blur-sm'}`}>
             <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-                <a className="w-[12rem] block" href="#hero">
-                    <img src={brainwave} alt="brainwave" width={190} height={40} />
+                <a className="w-[15rem] block" href="#hero">
+                   <h1 className='font-extrabold xl:text-4xl lg:text-4xl md:text-3xl text-2xl  '>Musharaf Dev</h1>
                 </a>
                 
                 <nav className={`${openNavigation ? 'flex ' : 'hidden'} fixed top-[5rem] left-0 right-0 lg:static lg:flex lg:mx-auto lg:bg-transparent bg-n-8`}>
